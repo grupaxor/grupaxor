@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-	background: #EBF0FF;
+	background: linear-gradient(0deg, rgba(235, 240, 255, 0.05), rgba(235, 240, 255, 0.05)), rgba(255, 255, 255, 0.95);
 }
 
 .content {
@@ -14,8 +14,6 @@ body {
 
 	left: 0px;
 	top: 0px;
-
-	background: linear-gradient(0deg, rgba(235, 240, 255, 0.05), rgba(235, 240, 255, 0.05)), rgba(255, 255, 255, 0.95);
 }
 
 header {
