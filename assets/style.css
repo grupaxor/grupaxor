@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+* {box-sizing: border-box;}
+
 body {
 	background: linear-gradient(0deg, rgba(235, 240, 255, 0.05), rgba(235, 240, 255, 0.05)), rgba(255, 255, 255, 0.95);
+	overflow-x:  hidden;
 }
 
 .content {
@@ -10,7 +13,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	padding: 20px 120px 0px;
-	gap: 30px;
+	gap: 25px;
 
 	left: 0px;
 	top: 0px;
@@ -30,7 +33,7 @@ header {
 	width: 173px;
 	height: 90px;
 	left: 0px;
-	top: 5px;
+	margin-top:  -3.5px;
 }
 
 .header__navbar {
@@ -65,6 +68,10 @@ header {
 	text-decoration: none;
 }
 
+.header__navbar-item-active {
+	padding-left:  20px;
+}
+
 .header__navbar-item-active a {
 	background-color:  lightgrey;
 }
@@ -96,11 +103,36 @@ header {
 
 }
 
+#jumb {
+	position:  relative;
+}
+
+#jumb__overlay {
+	padding:  5%;
+	background-color:  whitesmoke;
+	position:  absolute;
+	margin-top:  -50vh;
+	opacity: 0.95;
+	height:  auto;
+}
+
+@media screen and (max-width: 1000px) {
+	#jumb {
+		display:  none;
+	}
+}
+
+
+#jump__img {
+	max-width: 100vw;
+}
+
+
 #jumb__heading-title {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 300;
-	font-size: 64px;
+	font-size: 150%;
 	line-height: 87px;
 	display: flex;
 	align-items: center;
@@ -180,6 +212,10 @@ header {
 	line-height: 24px;
 	color: #000000;
 	margin-top:  -25px;
+}
+
+.section__img {
+	max-width: 100vw;
 }
 
 .partners__logo {
