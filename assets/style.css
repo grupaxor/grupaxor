@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -28,6 +29,16 @@ header {
 	overflow: hidden;
 	flex-direction: row;
 }
+
+#header__navbar-bars {
+	display: none;
+}
+
+#header__navbar-bars a {
+	text-decoration: none;
+	color:  #000;
+}
+
 
 #header__logo {
 	width: 173px;
@@ -80,6 +91,41 @@ header {
 	background-color:  	#DCDCDC;
 }
 
+#header__navbar-mobile-menu {
+	display: none;
+	height:  auto;
+	width:  100%;
+	margin-left:  -25px;
+	margin-top:  -25px;
+}
+
+.header__navbar-mobile {
+	display: flex;
+  	list-style-type: none;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	margin-left:  auto;
+}
+
+.header__navbar-mobile-item-a {
+		font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+
+	color: #000000;
+
+
+	/* Inside auto layout */
+
+	text-decoration: none;
+	padding-top: 20px;
+}
+
+
 .section {
 	/* Inside auto layout */
 
@@ -105,6 +151,44 @@ header {
 
 #jumb {
 	position:  relative;
+   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+}
+
+#jumb__mobile {
+	display:  none;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 #jumb__overlay {
@@ -120,6 +204,55 @@ header {
 	#jumb {
 		display:  none;
 	}
+}
+
+@media only screen and (max-device-width: 480px) {
+	header {
+		justify-content: center;
+		display:  inline-flex;
+	}
+
+	#header__navbar-bars {
+		display:  block;
+		position:  relative;
+		margin-top:  30px;
+		margin-left:  auto;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0px !important;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+		gap: 25px;
+
+		left: 0px;
+		top: 0px;
+	}
+
+	#jumb__mobile {
+		display:  flex !important;
+		flex-direction: column;
+		width:  100%;
+	}
+
+	#jumb__heading-title {
+		font-size: 32px !important;
+	}
+
+
+	.header__navbar {
+		display: none;
+	}
+
+	#leadership__entries {
+		display: flex !important;
+		flex-direction: column !important;
+	}
+
+
 }
 
 

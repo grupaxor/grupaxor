@@ -15,18 +15,27 @@
 		<title>Grupa XOR</title>
 		<link rel="shortcut icon" href="./favicon.ico" />
 		<link rel="stylesheet" href="./assets/style.css" type="text/css" />
+		<script type="text/javascript" src="assets/scripts.js"></script>
 		<script src="https://kit.fontawesome.com/c85255c2c7.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="content">
 			<header>
 				<img id="header__logo" src="assets/xor-logo.png" alt="Logo XOR"/>
+				<div id="header__navbar-bars"><a onclick="showNavbar();" href="#"><i class="fa-solid fa-bars fa-2xl"></i></a></div>
 				<ul class="header__navbar">
 					<li class="header__navbar-item"><a class="header__navbar-item-a" href="index.html">Strona główna</a></li>
 					<li class="header__navbar-item"><a class="header__navbar-item-a" href="docs/Statut.pdf">Statut</a></li>
 					<li class="header__navbar-item header__navbar-item-active"><a class="header__navbar-item-a" href="https://forms.gle/ZZrP222aTYjBMxbPA">Dołącz do nas</a></li>
 				</ul>
 			</header>
+			<div id="header__navbar-mobile-menu">
+				<ul class="header__navbar-mobile">
+					<li class="header__navbar-mobile-item"><a class="header__navbar-mobile-item-a" href="index.html">Strona główna</a></li>
+					<li class="header__navbar-mobile-item"><a class="header__navbar-mobile-item-a" href="docs/Statut.pdf">Statut</a></li>
+					<li class="header__navbar-mobile-item"><a class="header__navbar-mobile-item-a" href="https://forms.gle/ZZrP222aTYjBMxbPA"><b>Dołącz do nas</b></a></li>
+				</ul>
+			</div>
 			<div id="jumb">
 				<img id="jump__img" src="assets/dc-hdd.jpg" alt="XOR Servers Jumbotron" />
 				<div id="jumb__overlay">
@@ -34,10 +43,19 @@
 					<div id="jumb__heading-desc">
 						Jako Studenckie Koło Naukowe “XOR” działające przy Politechnice Świętokrzyskiej jesteśmy pasjonatami programowania. <br />
 						<br />
-						Koło nastawione jest na wspolną naukę oraz wymianę doświadczeń związanych z branżą IT.
+						Koło nastawione jest na wspólną naukę oraz wymianę doświadczeń związanych z branżą IT.
 					</div>
 				</div>
 			</div>
+
+			<div id="jumb__mobile"  class="section">
+					<span id="jumb__heading-title">IT to nasza&nbsp;<b>pasja.</b></span>
+					<div id="jumb__heading-desc">
+						Jako Studenckie Koło Naukowe “XOR” działające przy Politechnice Świętokrzyskiej jesteśmy pasjonatami programowania. <br />
+						<br />
+						Koło nastawione jest na wspólną naukę oraz wymianę doświadczeń związanych z branżą IT.
+					</div>
+				</div>
 			<div id="what-we-do" class="section">
 				<h2>Czym sie zajmujemy?</h2>
 				<div id="what-we-do__content">
